@@ -7,3 +7,5 @@ __pycache__/
 RAG_Medcal_Chatbot.egg-info/
 
 data/
+
+logs/
