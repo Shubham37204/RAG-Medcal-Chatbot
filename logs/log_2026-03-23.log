@@ -60,3 +60,8 @@
 2026-03-23 15:14:23,679 - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
 2026-03-23 15:14:24,022 - INFO - HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
 2026-03-23 15:14:24,029 - INFO - Hugging embedding model loaded successfully
+2026-03-23 15:19:32,075 - INFO - Loading faiss with AVX2 support.
+2026-03-23 15:19:35,965 - INFO - Successfully loaded faiss with AVX2 support.
+2026-03-23 15:19:36,251 - INFO - Saving Vector store
+2026-03-23 15:19:36,328 - INFO - Vector store saved successfully...
+2026-03-23 15:19:36,329 - INFO - Vectorization created successfully..
