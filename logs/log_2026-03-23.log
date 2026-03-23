@@ -1,0 +1,9 @@
+2026-03-23 15:06:32,871 - INFO - Making the vector store
+2026-03-23 15:06:32,871 - INFO - loading files from data/
+2026-03-23 15:06:53,990 - INFO - Successfully fetched 759 documents
+2026-03-23 15:06:53,990 - INFO - spliting 759 documents into chunks
+2026-03-23 15:06:54,227 - INFO - Generated 7080 text chunks
+2026-03-23 15:06:54,228 - INFO - initiazing our hugging face
+2026-03-23 15:06:54,327 - ERROR - error in loading emvedding model | Error: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`. | File: D:\RagChatBot\app\components\embedding.py | Line: 9
+2026-03-23 15:06:54,328 - ERROR - Failed to create new vector store | Error: error in loading emvedding model | Error: Could not import sentence_transformers python package. Please install it with `pip install sentence-transformers`. | File: D:\RagChatBot\app\components\embedding.py | Line: 9 | File: D:\RagChatBot\app\components\vector_store.py | Line: 28
+2026-03-23 15:06:54,329 - INFO - Vectorization created successfully..
