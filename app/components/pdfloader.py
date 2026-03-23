@@ -1,12 +1,9 @@
 import os
 from langchain_community.document_loaders import DirectoryLoader,PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-
 from app.common.logger import get_logger
 from app.common.custom_exception import CustomException
-
 from app.config.config import DATA_PATH,CHUNK_OVERLAP,CHUNK_SIZE
-
 logger = get_logger(__name__)
 
 #loading and checking the existing of the data root and having pdf in it or not
@@ -28,7 +25,7 @@ def load_pdf_files():
         return []
     
 #loading the content of the pdf
-def load_pdf_files(documents):
+def create_text_chunks(documents):
     try:
         if not documents:
             raise CustomException("No Document were found")
