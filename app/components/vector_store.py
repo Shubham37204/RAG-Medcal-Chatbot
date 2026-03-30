@@ -9,7 +9,6 @@ logger=get_logger(__name__)
 def load_vector_store():
     try:
         embedding_model=get_embedding_model()
-        
         if os.path.exists(DB_FAISS_PATH):
             logger.info("Loading existing vectorstore...")
             return FAISS.load_local(DB_FAISS_PATH,embedding_model,allow_dangerous_deserialization=True)
@@ -21,10 +20,8 @@ def load_vector_store():
         
 def save_vector_store(text_chunks):
     try:
-        
         if not text_chunks:
             raise CustomException("No chunks were found ...")
-        
         embedding_model=get_embedding_model()
         db=FAISS.from_documents(text_chunks,embedding_model)
         logger.info("Saving Vector store")

@@ -29,7 +29,7 @@ def create_qa_chain():
         db = load_vector_store()
         if db is None:
             raise CustomException("Vector store not present or empty")
-        llm = load_llm(huggingface_repo_id=HUGGINGFACE_REPO_ID , hf_token=HF_TOKEN )
+        llm = load_llm(huggingface_repo_id=HUGGINGFACE_REPO_ID , hf_token=HF_TOKEN)
         if llm is None:
             raise CustomException("LLM not loaded")
         qa_chain = RetrievalQA.from_chain_type(
